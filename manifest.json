@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Kwork Hider — прячь и сохраняй",
+  "version": "1.0.0",
+  "description": "Прячь неинтересные проекты на kwork.ru и сохраняй интересные — больше не листай одно и то же, вся история локально.",
+  "author": "Sergey (apofeouz)",
+  "homepage_url": "https://github.com/apofeouz/kwork-hider",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://kwork.ru/*"
+  ],
+  "icons": {
+    "16": "icon/icon_styled_16.png",
+    "48": "icon/icon_styled_48.png",
+    "128": "icon/icon_styled_128.png"
+  },
+  "action": {
+    "default_title": "Kwork Hider",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon/icon_styled_16.png",
+      "48": "icon/icon_styled_48.png",
+      "128": "icon/icon_styled_128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://kwork.ru/projects*",
+        "https://kwork.ru/projects/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "kwork-hider@apofeouz"
+    }
+  }
+}

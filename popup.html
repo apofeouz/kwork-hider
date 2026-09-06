@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kwork Hider</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <img src="icon/icon_styled_48.png" class="logo">
+    <div><h1>Kwork Hider</h1><p class="subtitle">Прячь и сохраняй на kwork.ru</p></div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="hidden">Скрытые <span id="cntHidden">0</span></button>
+    <button class="tab" data-tab="interest">Сохраненные <span id="cntInterest">0</span></button>
+  </div>
+
+  <div id="list" class="list"></div>
+
+  <div class="actions">
+    <button id="clear" class="btn danger">Очистить всё</button>
+    <button id="openKwork" class="btn secondary">На kwork →</button>
+  </div>
+
+  <div class="extra">
+    <a href="https://chromewebstore.google.com/detail/kwork-hider" target="_blank" class="btn secondary" style="font-size:11px">★ Оценить</a>
+    <a href="https://yoomoney.ru/to/41001166778763" target="_blank" class="btn primary" style="font-size:11px;background:#17b978;color:#fff;border-color:#17b978">☕ На чай</a>
+  </div>
+  <footer class="footer">
+    <a href="https://kwork.ru/projects" target="_blank" class="link">kwork.ru/projects</a>
+    <a href="https://github.com/apofeouz/kwork-hider" target="_blank" class="link">GitHub</a>
+    <span class="hint">только локально</span>
+  </footer>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

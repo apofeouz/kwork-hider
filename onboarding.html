@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kwork Hider — готово!</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#0a0908;color:#f1f5f9;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{max-width:520px;width:100%;background:#11161d;border:1px solid #1e293b;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:16px}
+h1{font-size:20px}
+.sub{color:#94a3b8;font-size:12px}
+.step{background:#0f172a;border:1px solid #1e293b;border-radius:10px;padding:14px}
+.step h3{font-size:13px;margin-bottom:4px}
+.step p{font-size:11px;color:#cbd5e1;line-height:1.5}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:8px;font-weight:700;font-size:13px;text-decoration:none}
+.btn.primary{background:#22c55e;color:#fff}
+.btn.secondary{background:#1e293b;color:#e2e8f0;border:1px solid #334155}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Kwork Hider установлен 🎉</h1>
+  <p class="sub">Прячь неинтересные и откладывай интересные на kwork.ru/projects</p>
+  <div class="step"><h3>× Скрыть</h3><p>На карточке проекта нажми × Скрыть — карточка исчезнет и уйдет в попап → Скрытые.</p></div>
+  <div class="step"><h3>☆ Сохранить</h3><p>Понравилось но не сейчас — нажми Сохранить, карточка подсветится зеленым и уйдет в Сохраненные.</p></div>
+  <div class="step"><h3>Попап</h3><p>Клик по иконке — увидишь списки, можешь вернуть или очистить.</p></div>
+  <div style="display:flex;gap:8px">
+    <a href="https://kwork.ru/projects" class="btn primary" target="_blank">На kwork →</a>
+    <a href="#" id="close" class="btn secondary">Понятно</a>
+  </div>
+</div>
+<script src="onboarding.js"></script>
+</body>
+</html>
