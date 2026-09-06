@@ -71,7 +71,7 @@ document.querySelectorAll('.tab').forEach(btn=>{
 clearBtn.addEventListener('click', ()=>{
   const map = currentTab==='hidden'? hiddenMap: interestMap;
   if(!Object.keys(map).length) return;
-  if(!confirm(`Очистить ${currentTab==='hidden'?'скрытые':'отложенные'} (${Object.keys(map).length})?`)) return;
+  if(!confirm(`Очистить ${currentTab==='hidden'?'скрытые':'сохраненные'} (${Object.keys(map).length})?`)) return;
   const key = currentTab==='hidden'? 'kwork_hidden':'kwork_interesting';
   chrome.storage.local.set({[key]:{}}, ()=>{
     chrome.tabs.query({active:true, currentWindow:true}, (tabs)=>{

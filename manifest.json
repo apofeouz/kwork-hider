@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Kwork Hider — прячь и сохраняй",
-  "version": "1.0.0",
-  "description": "Прячь неинтересные проекты на kwork.ru и сохраняй интересные — больше не листай одно и то же, вся история локально.",
+  "name": "Kwork Hider — скрыть и сохранить",
+  "version": "1.0.1",
+  "description": "Скрывай неинтересные проекты на kwork.ru и сохраняй интересные — больше не листай одно и то же, вся история локально.",
   "author": "Sergey (apofeouz)",
   "homepage_url": "https://github.com/apofeouz/kwork-hider",
   "permissions": [
